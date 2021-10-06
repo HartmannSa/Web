@@ -1,13 +1,24 @@
 <!DOCTYPE html>
+
 <html>
   <head>
-    <link rel=“stylesheet“ href=“style.css“ type=“text/css“>
+    <link rel="stylesheet" href="style.css" type="text/css">
+	<title>HTML | Home</title> 								<!-- wird im Tab ausgegeben -->
   </head>
 
   <body>
-    <div id=“wrapper“>
-      <header>Kopfzeile</header>
-      <section>MainContent</section>
+    <div id="wrapper">
+      <header><img src="bilder/logo.png" alt="Logo"></header> <!-- alt = was soll alternativ ausgegeben werden, wenn Bild nicht geladen werden kann--> 
+      
+	  <nav>
+		<ul> 												<!-- ungeordnete Liste vs. geordnete (mit Nummern)-->
+			<li><a href="index.html">Home</a></li> 			<!-- List Item-->
+			<li><a href="ueber.html">Ueber</a></li> 		<!--a = anchor-->
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	  </nav>
+	  
+	  <section>MainContent</section>
       <aside>Sidebar</aside>
       <footer>Fusszeile</footer>
     </div>

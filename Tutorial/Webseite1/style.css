@@ -1,29 +1,51 @@
-#wrapper{
+#wrapper {
 	width: 960px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-header{
-  height: 150px;
-  background: red;
+header {
+	/* padding: 10px; */ /*Rand um das Logo in ALLE Richtungen */
+	padding-bottom: 10px;
+	padding-top: 10px;
+	height: 100px;
+	text-align: center; /* Logo mittig*/
 }
 
-section{
+nav {
+	text-align: center; /* Navigation mittig*/
+}
+
+nav ul {
+	list-style-type: none;	/* keine Aufzählungspunkte*/
+}
+
+nav li {
+	display: inline; /* Nav items sollen nebeneinander statt übereinander sein*/
+	margin-right: 40px;
+}
+
+a {
+	color: #777;					/* Schriftfarbe*/
+	text-decoration: none;			/* Kein unterstrichen*/
+	font-family: arial, sans-serif; /* font-family hat den Vorteil, dass wenn Browser die ausgewählte Schrift nicht hat, er die nächste auswählt*/
+}
+
+section {
   width: 650px;
   height: 550px;
   float: left;
   background: green;
 }
 
-aside{
+aside {
   width: 310px;
   height: 550px;
   float: right;
   background: blue;
 }
 
-  footer{
+ footer {
   height: 50px;
   clear: both;		/* ausgereichtet auf beide Seiten */
   background: orange;
