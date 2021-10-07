@@ -100,21 +100,39 @@ aside {
   	clear: both;		/* ausgereichtet auf beide Seiten */
 }
 
-#footer ul {
+footer ul {
 	float: left;
 	list-style: none; /* ohne Aufzählungspunkte*/
 	padding: 0px;
 	magrin: 20px;
 }
 
-#footer li {
+footer li {
 	margin-right: 15px;
 	display: inline;
 }
 
-#footer p { 
+footer p { 
 	text-align: right;		/* Copyright soll rechts stehen*/
 	margin-right: 20px;
 	color: #777;	
+}
+
+#über {
+	margin: 15px;
+}
+
+#über h1 {
+	color: #777;
+	padding-bottom: 10px;
+}
+
+#kontakt {
+	margin: 15px;
+}
+
+#kontakt h1 {
+	color: #777;
+	padding-bottom: 10px;
 }
 
