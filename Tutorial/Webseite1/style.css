@@ -2,6 +2,12 @@
 	width: 960px;
 	margin-right: auto;
 	margin-left: auto;
+	font-size: 16px;	/* diese Änderungen sind dann für die ganze Webseite*/
+	font-family: arial, sans-serif; /* font-family hat den Vorteil, dass wenn Browser die ausgewählte Schrift nicht hat, er die nächste auswählt*/
+}
+
+body {
+	background-color: #EDEBE8
 }
 
 header {
@@ -28,25 +34,64 @@ nav li {
 a {
 	color: #777;					/* Schriftfarbe*/
 	text-decoration: none;			/* Kein unterstrichen*/
-	font-family: arial, sans-serif; /* font-family hat den Vorteil, dass wenn Browser die ausgewählte Schrift nicht hat, er die nächste auswählt*/
 }
 
 section {
-  width: 650px;
-  height: 550px;
+  width: 603px; /* 960-310(aside)=650 -> 603=650- 15 -15 -15 -1-1 */
   float: left;
-  background: green;
+	padding: 15px; 	/* Innenabstand zu allen Seiten */	
+	margin-top: 15px;	/* Außenabstand */
+	margin-right: 15px;
+	background-color: #F2F2F2;
+	border: 1px solid #DEDCD9;
+	border-radius: 5px;		/* Abgerundete Ecken */
+}
+
+.article { 			/* Für Klassen einen Punkt*/
+	height: 160px;
+	margin-top: 15px;  /* Außenabstand oben*/
+	margin-bottom: 50px;
+}
+
+.article img { 
+	height: 130px;
+	float: left;
+	padding: 5px; /* Dadurch ist Rand -> 5px Lücke -> image */
+	margin-right: 10px;
+	border: 1px solid #DEDCD9;
+}
+
+.article a {
+	font-size: 18px;
 }
 
 aside {
-  width: 310px;
-  height: 550px;
+  width: 258px;
   float: right;
-  background: blue;
+	padding: 25px;
+	margin-top: 15px;
+	background-color: #F2F2F2;
+	border: 1px solid #DEDCD9;
+	border-radius: 5px;
+}
+
+.sidebar img {
+	height: 100px;
+	padding: 5px;
+	margin-top: 15px;
+	border: 1px solid #DEDCD9;	
+}
+
+.sidebar a {
+	font-size: 18px;
+	padding: 5px;
+}
+
+.sidebar p {
+	padding: 5px;
 }
 
  footer {
   height: 50px;
   clear: both;		/* ausgereichtet auf beide Seiten */
-  background: orange;
 }
