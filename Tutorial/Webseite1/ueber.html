@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+   	<link rel="stylesheet" href="style.css" type="text/css">
+	<title>HTML | Home</title> 						<!-- wird im Tab ausgegeben -->
+	<meta charset="utf-8">							<!-- Für die richtige Anzeige von Umlauten -->
+  </head>
+
+  <body>
+    <div id="wrapper"> <!-- Unterschied id vs class: class kann mehrmals benutzt werden -->
+      <header><img src="bilder/logo.png" alt="Logo"></header> <!-- alt = was soll alternativ ausgegeben werden, wenn Bild nicht geladen werden kann--> 
+      
+	  <nav>
+		<ul> 												<!-- ungeordnete Liste vs. geordnete (mit Nummern)-->
+			<li><a href="index.html">Home</a></li> 			<!-- List Item-->
+			<li><a href="ueber.html">Über</a></li> 		<!--a = anchor-->
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	  </nav>
+	  
+	  <section>
+		  <div id="über">
+			<h1>Über</h1>
+			<a>Name:</a>
+			<p>Mara Musterfrau</p>
+			<a>Wohnort</a>
+			<p>Musterhausen</p>
+			<a>Geburtsdatum</a>
+			<p>24. Dezember 2024</p>		  
+		  </div>
+	  </section>
+      <aside>
+		<div class="sidebar">
+			<a href="#">Sidebar Titel</a>
+			<img src="bilder/Gebäude.jpg" alt="Bild">
+			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+	      </div>
+	      	<div class="sidebar">
+			<a href="#">Sidebar Titel</a>
+			<img src="bilder/Gebäude.jpg" alt="Bild">
+			<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+	      </div>
+	</aside>
+      <footer>
+	    	<ul> 												<!-- ungeordnete Liste vs. geordnete (mit Nummern)-->
+			<li><a href="index.html">Home</a></li> 			<!-- List Item-->
+			<li><a href="ueber.html">Über</a></li> 		<!--a = anchor-->
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	      <p><a href="#">&copy; 2021 Hartmann</a></p>
+	    </footer>
+    </div>
+  </body>
+</html>

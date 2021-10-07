@@ -42,6 +42,7 @@ section {
 	padding: 15px; 	/* Innenabstand zu allen Seiten */	
 	margin-top: 15px;	/* Außenabstand */
 	margin-right: 15px;
+	margin-bottom: 15px;  	/* Abstand zur Fußzeile hin */
 	background-color: #F2F2F2;
 	border: 1px solid #DEDCD9;
 	border-radius: 5px;		/* Abgerundete Ecken */
@@ -70,6 +71,7 @@ aside {
   float: right;
 	padding: 25px;
 	margin-top: 15px;
+	margin-bottom: 15px;
 	background-color: #F2F2F2;
 	border: 1px solid #DEDCD9;
 	border-radius: 5px;
@@ -92,6 +94,45 @@ aside {
 }
 
  footer {
-  height: 50px;
-  clear: both;		/* ausgereichtet auf beide Seiten */
+  	background-color: #F2F2F2;
+	border: 1px solid #DEDCD9;
+	border-radius: 5px;		/* Abgerundete Ecken */
+  	clear: both;		/* ausgereichtet auf beide Seiten */
 }
+
+footer ul {
+	float: left;
+	list-style: none; /* ohne Aufzählungspunkte*/
+	padding: 0px;
+	margin: 20px;
+}
+
+footer li {
+	margin-right: 15px;
+	display: inline;
+}
+
+footer p { 
+	text-align: right;		/* Copyright soll rechts stehen*/
+	margin-right: 20px;
+	color: #777;	
+}
+
+#über {
+	margin: 15px;
+}
+
+#über h1 {
+	color: #777;
+	padding-bottom: 10px;
+}
+
+#kontakt {
+	margin: 15px;
+}
+
+#kontakt h1 {
+	color: #777;
+	padding-bottom: 10px;
+}
+
