@@ -53,7 +53,8 @@ section {
 	margin-bottom: 50px;
 }
 
-.article img { 			
+.article img { 
+	height: 60px;
 	float: left;
 	padding: 5px; /* Dadurch ist Rand -> 5px Lücke -> image */
 	margin-right: 10px;
@@ -75,6 +76,7 @@ aside {
 }
 
 .sidebar img {
+	height: 60px;
 	padding: 5px;
 	margin-top: 15px;
 	border: 1px solid #DEDCD9;	
