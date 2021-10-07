@@ -37,7 +37,7 @@ a {
 }
 
 section {
-  width: 603; /* 960-310(aside)=650 -> 603=650- 15 -15 -15 -1-1 */
+  width: 603px; /* 960-310(aside)=650 -> 603=650- 15 -15 -15 -1-1 */
   float: left;
 	padding: 15px; 	/* Innenabstand zu allen Seiten */	
 	margin-top: 15px;	/* Außenabstand */
@@ -48,13 +48,13 @@ section {
 }
 
 .article { 			/* Für Klassen einen Punkt*/
-	height: 120px;
+	height: 160px;
 	margin-top: 15px;  /* Außenabstand oben*/
 	margin-bottom: 50px;
 }
 
 .article img { 
-	height: 60px;
+	height: 100px;
 	float: left;
 	padding: 5px; /* Dadurch ist Rand -> 5px Lücke -> image */
 	margin-right: 10px;
