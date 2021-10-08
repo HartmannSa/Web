@@ -1,0 +1,235 @@
+div{
+	background: lightgray;
+	color: white;					/* Textcolor*/
+	border: 3px dashed red;			/* different types: solid, dashed, dotted, ridged, ...*/
+	border-radius: 5px;
+	padding: 10px 15px 20px 30px;	/* Clockweise: top, right, bottom, left*/
+	margin: 10px 15px;				/* 1. oben&unten 2. rechts&links, Gibt auch noch AUTO*/
+}
+
+/* Select IDs*/
+#quote{
+	font-family: arial;
+	font-variant: small-caps;
+	color: black;
+	
+	/* Textzentrierung*/
+	/* Alternativ: text-align: center;*/
+	width:70%;
+	margin: auto;	/* Alternativ: 0 auto -> dann ist es auch in der Bildschirmmitte*/	
+	
+	/* Textumbruch*/
+	/* white-space: pre; /* Whitespace is preserved. D.h.     auch   viele Leerzeichen   werden angezeigt*/ 
+	white-space: nowrap;	/* endlos Text, d.h. scrollbar in x nötig, weil Text nach rechts aus Fenster raus geht*/	
+}
+
+#box{
+	background: f7f7f7;
+	color: black;
+	width: 400px;
+	margin: 0 auto;
+	
+	direction: rtl;	/* right to left; ODER default: ltr*/
+	
+	box-shadow: 0 0 5px rgba(0,0,0,0.5) 	/* x y z color*/
+	/* border: solid black;*/
+	/*outline: none; */							/* oder: black*/
+}
+
+#box:hover{
+	transform: scale(2); 		/* oder: rotate(45deg); skew(20deg, 10deg); translate(120px, 120px)*/
+	
+}
+
+#anime{
+	background-color: red;
+	color: white;
+	padding: 15px;
+	width: 180px;
+	height: 50px;
+	border: 1px solid black;
+	animation-name: animati;
+	animation-delay: 2s;
+	animation-duration: 4s;
+	animation-iteration-count: 100;
+	position: relative;
+}
+
+@keyframes animati {
+	0% {background-color: red; left: 0px; top:0px;}
+	25% {background-color: orange; left: 400px; top:0px;}
+	50% {background-color: yellow; left: 400px; top:50px;}
+	75% {background-color: green; left: 0px; top:50px;}
+	100% {background-color: red; left: 0px; top:0px;}
+}
+
+
+/* Select CLASS */
+.movie{
+	background: steelblue;
+		
+}
+
+/* Select <span id="author"> - Pippi Langstrumpf</span> */
+span#author{
+	text-transform: uppercase;
+}
+#skills:after {
+	content:"@@@@@@ AFTER"
+}
+#skills:before {
+	content:"BEFORE BEFORE@@@@@"
+}
+
+#skills ol{
+	list-style: none;
+	list-style-type: lower-alpha;
+}
+#skills ol li {
+	color: white;
+	background: black;
+}
+#skills ol li:first-child {	/* last-child */
+	background: lightgreen;
+}
+#skills ul li {
+	color: gray;
+	background: darkgreen;
+}
+#skills ul li:nth-child(2n) {
+	background: white;
+}
+
+/* h3 + p 		= Select Paragraph after headline 3 */
+/* :first-line 	= Just change the first Line. Gibt auch last-line, first-letter, ... */
+h3 + p:first-line {
+	background: lightblue;
+	text-transform: uppercase;
+}
+
+/* Select ONLY paragraphs, die eine klasse haben */
+/* geht auch z.b. alle paragraphs, die eine ID haben: p[id]{}*/
+p[class] {
+	color: red;
+}
+
+/* Positioning (default: top left)*/
+/* WARNING: Nicht verwendete ID's */
+/* ABSOLUT */
+#bottom-right{
+	position: absolute; 
+	bottom: 0px;
+	right: 0px;
+	z-index: 5; 	/* Je höher desto "sichtbarere". Kleiner liegt drunter/wird verdeckt */
+}
+/* FIXED (bleibtwo es ist auf dem Bildschirm, auch wenn man scrollt*/
+#fixed-position{
+	position: fixed; 
+	background: red;
+	color: white;
+}
+/* RELATIVE */
+#fixed-position{
+	position: fixed; 
+	background: red;
+	color: white;
+}
+
+#normal{
+	font-style: normal;
+}
+#italic{
+	font-style: italic;
+}
+#oblique{
+	font-style: oblique;
+}
+#linethrough{
+	text-decoration: line-through;
+}
+#underline{
+	text-decoration: underline;
+}
+#overline{
+	text-decoration: overline;
+}
+#smallcap{
+	font-variant: small-caps;
+}
+#uppercase{
+	text-transform: uppercase;
+}
+#wordspacing{
+	word-spacing: 10px;
+}
+#letterspacing{
+	letter-spacing: 10px;
+}
+#Wnormal{
+	font-weight: normal;
+}
+#Wbolder{
+	font-weight: bolder;
+}
+#Wbold{
+	font-weight: bold;
+}
+#xxlarge{
+	font-size: x-large;
+}
+#large{
+	font-size: large;
+}
+#medium{
+	font-size: medium;
+}
+#small{
+	font-size: small;
+}
+#xxsmall{
+	font-size: xx-small;
+}
+#size25pt{
+	font-size: 25pt;
+}
+#size150{
+	font-size: 150%;
+}
+#linenormal{
+	line-height: normal;
+}
+#height25pt{
+	line-height: 25pt;
+}
+#height200{
+	line-height: 200%;
+}
+
+
+/* REAKTIONS bei INTERAKTION mit Maus*/
+/* Hover = mit Maus drüber fahren*/
+/* Active = während die Maus draufklickt*/
+/* visited = wenn Link angeklickt wurde, dafür wird eine DB benötigt*/
+a:hover{	/* oder z.b.: #nav:hover*/
+	background: orange;
+	color:black;
+	cursor: pointer;		
+}
+
+/* BACKGROUND */
+/* Generate color gradient on mycolorspace: https://mycolor.space/gradient?ori=to+right&hex=%23F45917&hex2=%23E2EB12&sub=1 */
+body{
+	background-image: linear-gradient(to right, #ffffff, #e6e7e8, #cdd1d1, #b5bab8, #a2a39e);
+	background-image: radial-gradient( #ffffff, #e6e7e8, #cdd1d1, #b5bab8, #a2a39e);
+
+	/*backround-image: url(foto.jpg);
+	background-repeat: repeat-y;*/
+}
+
+footer{
+	clear:both;	/* nic ist rechts oder links von diesem Element*/
+}
+
+
+
+

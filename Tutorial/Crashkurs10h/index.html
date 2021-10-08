@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page title</title>
+		<style type="text/css">
+			table{
+				border: 1px solid black;
+			}
+			
+			td{
+				border: 1px solid black;
+				}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<header>
+			This is the Header
+			</header>
+		</div>
+		
+		<h1>Heading</h1>
+		<h2>Heading</h2>
+		<h3>Heading</h3>
+		<h4>Heading</h4>
+		<h5>Heading</h5>
+		<h6>Heading</h6>
+		
+		<p>paragraph</p>
+		<p>Another paragraph and some stuff. Her kommt ein <b>Enter</b>,</br> sodass das in der naechsten zeile steht. Mit <b>b</b> und <strong>strong</strong> wird der Text fett.</p>
+		<big>This thext is big</big></br>
+		<small>This text is small</small></br>
+		<p>Mit hr kann man eine horizontale Linie einbinden</p>
+		<hr width="70%">
+		<p>
+			Links werden mit a href eingebunden. Z.b.ein Link zu dem <a href="https://www.youtube.com/watch?v=Q33KBiDriJY">Tutorial</a>. 
+			Alternativ kann auch ein Bild ein Link sein, indem der a href tag um das Bild gelegt wird.
+			Hier ein normales Bild und eins mit Link: (Bilder können auch über eine URL eingefügt werden)
+		</p>
+		<img src="bilder/GuterMitarbeiter.jpg" height="300px" width="300px" alt="Image">
+		<a href="https://austausch.hmi-project.com/wiki/kme/styleguide">
+			<img src="bilder/HMI.png" height="300px" width="300px" alt="Image">
+		</a>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/KraussMaffei_Logo.jpg" height="300px" width="500px" alt="Image">
+		</br>
+		
+		<h6>Ordered List</h6>
+		<ol>
+			<li>First Listelement - ordered List</li>
+			<li>Second Listelement - ordered List</li>
+			<li>Third Listelement - ordered List</li>
+			<li>Fourth Listelement - ordered List</li>
+		</ol>
+		
+		<h6>UNOrdered List</h6>
+		<ul>
+			<li>First Listelement - ordered List</li>
+			<li>Second Listelement - ordered List</li>
+			<li>Third Listelement - ordered List</li>
+			<li>Fourth Listelement - ordered List</li>
+		</ul>
+		
+		<h3>Registration Form as an id in div containers</h3>
+		<div id="reg-form">
+			<form action="script.php" method="">
+				<label for="first-name">First Name: </label>
+				<input type="text" name="first-name" placeholder="Mara" required>
+				
+				<label for="last-name">Last Name: </label>
+				<input type="text" name="last-name" placeholder="Musterfrau" required>
+				
+				<div>
+					Gender: 
+					<label for="gender-male">Male</label>
+					<input type="radio" name="gender-choice" value="choice-1">
+					
+					<label for="gender-female">Female</label>
+					<input type="radio" name="gender-choice" value="choice-2">
+					
+					<label for="gender-other">Other</label>
+					<input type="radio" name="gender-choice" value="choice-3">			
+				</div>
+				
+				<div>
+					Colors you like: 
+					<label for="color-green">green</label>
+					<input type="radio" name="color-green" value="choice-1">
+					
+					<label for="color-blue">blue</label>
+					<input type="radio" name="color-blue" value="choice-2">
+					
+					<label for="color-red">red</label>
+					<input type="radio" name="color-red" value="choice-3">			
+				</div>
+				
+				<div>
+					<label for="email">Email: </label>
+					<input type="email" name="email" placeholder="xyz@trash.com">
+					
+					<label for="password">Password: </label>
+					<input type="password" name="password">
+				</div>
+				
+				<div>
+					<label for="Month">Birthday: </label>
+					<select name="Month">
+						<option value"0" selected disabled>Month</option>
+						<option value"jan">Januar</option>
+						<option value"feb">Februar</option>
+						<option value"mar">März</option>
+						<option value"apr">April</option>
+						<option value"mai">Mai</option>
+						<option value"june">Juni</option>
+						<option value"juli">Juli</option>
+						<option value"aug">August</option>
+						<option value"sept">September</option>
+						<option value"okt">Oktober</option>
+						<option value"nov">November</option>
+						<option value"dez">Dezember</option>
+				</div></br>
+				
+				<input type="checkbox" name="agree">
+				<label for="agree">I agree to all the conditions of the form.</label></br>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+
+		<h3>Tabellen</h3>		
+		<div>
+			<table>
+				<thead>
+					<th>Vorname</th>
+					<th>Nachname</th>
+					<th>Alter</th>					
+				</thead>
+				
+				<tr>
+					<td>Pippi</td>
+					<td>Langstrumpf</td>
+					<td>12</td>
+				</tr>
+				<tr>
+					<td>Peter</td>
+					<td>Pan</td>
+					<td>111</td>
+				</tr>
+				<tr>
+					<td>Donald</td>
+					<td>Duck</td>
+					<td>20</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div>
+			<footer>
+				</br>
+				Hier ist eine Fusszeile
+			</footer>
+		</div>
+		
+	</body>
+</html> 
