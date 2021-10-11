@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Page title</title>
+		<title>Page title | INDEX</title>
 		<style type="text/css">
 			table{
 				border: 1px solid black;
@@ -11,6 +11,11 @@
 				border: 1px solid black;
 				}
 		</style>
+		<!-- Include JavaScript-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- Include jQuery UI-->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	</head>
 
 	<body>
@@ -125,6 +130,54 @@
 				<label for="agree">I agree to all the conditions of the form.</label></br>
 				<button type="submit">Submit</button>
 			</form>
+		</div>
+
+		<h3>Javascript - Test</h3>
+		<script>
+			$(document).ready(function() {
+				$("#js-btn").click(function() {
+					alert("Value: " + $("#sometext").val());
+					$("img").toggleClass("styleclass");					
+				});
+				$("img").click(function() {
+					$(this).hide();
+				});
+				$("#sometext").on("keypress", function() {
+					$("#js-p").toggle();		/*switches between hide and show the paragraph*/
+				});
+				$("#js-img-1").click(function() {
+					$("#js-img-1").fadeOut("10000");	/* Time in ms*/
+					$("#js-img-2").fadeOut("fast");						
+				});
+				$("#js-img-2").click(function() {
+					$("#js-img-2").fadeOut("slow");					
+				});	
+				$("#js-p-d").draggable();	
+    			$("#date").datepicker()	
+			});
+
+		</script>
+		<style>
+			.styleclass {
+				border: 5px solid green
+			}
+			#js-p-d {
+				border: 5px solid black;
+				margin: 10px;
+				padding: 5px;
+				background-color: yellow;
+				width: 100px;
+				height: 50px;
+			}
+		</style>
+		<div id="test-js">
+			<p id="js-p">This paragraph will be hidden as soon as you start typing...</p>
+			<p id="js-p-d">Drag me!</p>
+			<img id="js-img-1" src="bilder/HMI.png" height="70px"></br>
+			<img id="js-img-2" src="bilder/FunFacts.jpg" height="70px"></br>
+			<input id="sometext" type="text" value="">
+			<button id="js-btn">Alert</button> </br>
+			Datepicker: <input id="date" type="text" size="10">
 		</div>
 
 		<h3>Tabellen</h3>		

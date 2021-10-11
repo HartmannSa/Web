@@ -1,0 +1,90 @@
+// SELECTORS
+$("ul li a")
+$("body")
+
+// .css
+$("body").css("background-color", "black")
+$("h1").css("color", "red")
+$("h1").css(design)
+-> Dafür muss Object design angelegt sein:
+<body>
+    <script>
+        let design={
+            color: "blue",
+            background: "green",
+            border: "3px solid black"
+        }
+    </script>
+</body>
+
+
+// .before and .after
+$("ul").before("<h2>Headline Before</h2>")
+$("ul").after("<h2>Headline After</h2>")
+
+// .text
+$("ul").text()          -> returns all elements of the list (CONTENT)
+$("ul:first").text()    -> returns first elemtent of the list
+$("p").text("Bla")      -> replaces the text
+
+//.html
+$("li:last").html()                         -> returns last elemtent of the list (AS HTML, so with <TAGS>)
+$("li:last").html("<li>Some New Item</li>") -> replaces this item
+
+// .attr
+$("img").attr("border", "5px solid black")
+
+
+// Wait with yQuery until side is loaded
+    $(document).ready(function() { ... });
+    =
+     $(function() { ... });
+
+
+// .val
+    <h3>Javascript - Test</h3>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                alert("Value: " + $("#sometext").val());
+            });
+        });
+    </script>
+    <div id="test-js">
+        <input type="text" id="sometext" value="">
+        <button>Submit</button>
+    </div>
+
+// .addClass (.removeClass, .toggleClass)
+		<script>
+			$(document).ready(function() {
+				$("button").click(function() {
+					$("img").addClass("styleclass");    // .addClass
+				});
+			});
+		</script>
+		<style>
+			.styleclass {
+				border: 5px solid green
+			}
+		</style>
+		<div id="test-js">
+			<button>Submit</button>
+		</div>
+
+// effects: .hide() .show() .toggle()  (toggle switches between hide and show)
+// effects: .fadeOut("slow")  .fadeIn(3000) (time in ms) !Important is:  disply:none
+// effects: .slideDown (display:none ist für das widget wichtig!) .slideUp .slideToggle
+
+// events: .click .on( "click" .keypress .keydown .keyup ) 
+
+// UI: draggable() droppable()
+$(function() { 
+    $("#js-img").draggable();
+});
+
+// .datepicker()
+<input id="date" type="text" size="10">
+<script>
+    $("#date").datepicker()
+</script>
